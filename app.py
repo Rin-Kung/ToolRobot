@@ -84,4 +84,4 @@ if st.button("🚀 CALCULATE NEW TOOL", type="primary", use_container_width=True
     
     # กล่องข้อความสำหรับก๊อปปี้ไปใช้งานง่ายๆ
     st.info("💡 Copy ค่าด้านล่างนี้ไปใส่ใน Tool Frame (X, Y, Z, W, P, R):")
-    format_str = f"{res[0]:.3f}, {res[1]:.3f}, {res[2]:.3f}, {res[3]:.3f}, {res[4]:.3f
+    format_str = f"{res[0]:.3f}, {res[1]:.3f}, {res[2]:.3f}, {res[3]:.3f}, {res[4]:.3f}, {res[5]:.3f}"
