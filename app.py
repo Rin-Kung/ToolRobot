@@ -52,7 +52,7 @@ st.title("🤖 FANUC Tool Frame Calculator")
 #st.markdown("กรอกค่า **LPOS** (UF9) เพื่อคำนวณหาค่า Tool Frame ที่ทำให้ X และ Z เป็นศูนย์")
 
 # ส่วนรับข้อมูล Input
-st.subheader("📥 Input: LPOS Data")
+st.subheader("Input: LPOS Data")
 col1, col2 = st.columns(2)
 
 with col1:
@@ -65,14 +65,14 @@ with col2:
     p_in = st.number_input("P (deg)", value=-3.860, format="%.3f")
     r_in = st.number_input("R (deg)", value=-43.725, format="%.3f")
 
-if st.button("🚀 CALCULATE NEW TOOL", type="primary", use_container_width=True):
+if st.button("CALCULATE NEW TOOL", type="primary", use_container_width=True):
     # คำนวณผลลัพธ์
     res = solve_tool([x_in, y_in, z_in, w_in, p_in, r_in])
     
     st.divider()
     
     # ส่วนแสดงผลลัพธ์
-    st.subheader("🎯 Result: New Tool Frame")
+    st.subheader("Result: New Tool Frame")
     
     # แสดงเป็นตารางเพื่อให้เห็นตัวเลขชัดเจน ไม่โดนตัด
     res_names = ["X (mm)", "Y (mm)", "Z (mm)", "W (deg)", "P (deg)", "R (deg)"]
@@ -83,5 +83,5 @@ if st.button("🚀 CALCULATE NEW TOOL", type="primary", use_container_width=True
     st.table(table_data)
     
     # กล่องข้อความสำหรับก๊อปปี้ไปใช้งานง่ายๆ
-    st.info("💡 Copy ค่าด้านล่างนี้ไปใส่ใน Tool Frame (X, Y, Z, W, P, R):")
+    #st.info("💡 Copy ค่าด้านล่างนี้ไปใส่ใน Tool Frame (X, Y, Z, W, P, R):")
     format_str = f"{res[0]:.3f}, {res[1]:.3f}, {res[2]:.3f}, {res[3]:.3f}, {res[4]:.3f}, {res[5]:.3f}"
