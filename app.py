@@ -49,7 +49,7 @@ def solve_tool(vals):
 st.set_page_config(page_title="FANUC Tool Calc", page_icon="🤖", layout="centered")
 
 st.title("🤖 FANUC Tool Frame Calculator")
-st.markdown("กรอกค่า **LPOS** (UF9) เพื่อคำนวณหาค่า Tool Frame ที่ทำให้ X และ Z เป็นศูนย์")
+#st.markdown("กรอกค่า **LPOS** (UF9) เพื่อคำนวณหาค่า Tool Frame ที่ทำให้ X และ Z เป็นศูนย์")
 
 # ส่วนรับข้อมูล Input
 st.subheader("📥 Input: LPOS Data")
